@@ -1,2 +1,3 @@
-# mysqlnotes
-my mysql notes
+# My MySQL Notes
+
+It's a note book about mysql.
