@@ -49,10 +49,10 @@ It's a note book about mysql.
 8. SELECT MIN(COLUMN_NAME) FROM (TABLE_NAME);  
     **_The min function return the min value in a column._**
 
-9. SELECT (TABLE_NAME1.COLUMN_NAME...),(TABLE_NAME2.COLUMN_NAME) FROM (TABLE_NAME1),(TABLE_NAME2) WHERE (CONDITION);
+9. SELECT (TABLE_NAME1.COLUMN_NAME...),(TABLE_NAME2.COLUMN_NAME) FROM (TABLE_NAME1),(TABLE_NAME2) WHERE (CONDITION);  
     **_It creates a temporary table with the joind table's data._**
 
-10. SELECT (COLUMN_NAME...) FROM (TABLE_NAME1) (INNER/LEFT OUTER/RIGHT OUTER) JOIN (TABLE_NAME2) ON (CONDITION);
+10. SELECT (COLUMN_NAME...) FROM (TABLE_NAME1) (INNER/LEFT OUTER/RIGHT OUTER) JOIN (TABLE_NAME2) ON (CONDITION);  
     **_Inner join returns the columns are matched condition in both tables_**  
     **_Left join returns the columns from left table, if matched condition data will be used from right table, else data is null_**  
     **_Right join is similar to left join_**  
@@ -64,32 +64,32 @@ It's a note book about mysql.
 
 ### :star2: Operate Data
 
-1.  INSERT INTO (TABLE_NAME) (COLUMN_NAME...) VALUES (VALUE...); 
+1.  INSERT INTO (TABLE_NAME) (COLUMN_NAME...) VALUES (VALUE...);  
     **_Insert data into a table_**  
 
-2.  UPDATE (TABLE_NAME) SET (COLUMN_NAME...) WHERE (CONDITION);
+2.  UPDATE (TABLE_NAME) SET (COLUMN_NAME...) WHERE (CONDITION);  
     **_Update data in a table_**  
 
 3.  DELETE FROM (TABLE_NAME) WHERE (CONDITION);  
     **_Delete data in a table_**  
 
 4.  CREATE TABLE (TABLE_NAME)
-    (COLUMN_NAME DATA_TYPE(SIZE) (CONSTRAINT) (AUTO_INCREMENT)),...,PRIMARY KEY(COLUMN_NAME));
-    **_Create a new table and specifiy column's name and data type._**
+    (COLUMN_NAME DATA_TYPE(SIZE) (CONSTRAINT) (AUTO_INCREMENT)),...,PRIMARY KEY(COLUMN_NAME));  
+    **_Create a new table and specifiy column's name and data type._**  
     **_Constraint includes NOT NULL, UNIQUE, PRIMARY KEY, CHECK, DEFAULT._**
 
-5.  ALERT TABLE (TABLE_NAME) ADD (COLUMN_NAME DATA_TYPE); 
-    ALERT TABLE (TABLE_NAME) DROP COLUMN (COLUMN_NAME); 
-    ALERT TABLE (TABLE_NAME) CHANGE (COLUMN_NAME) (NEW_NAME) (DATA_TYPE)(SIZE); 
-    DROP TABLE (TABLE_NAME); 
-    RENAME TABLE (TABLE_NAME) TO (NEW_TABLE_NAME); 
-    **_Alert table add or drop column in a table._** 
-    **_Drop will drop the entire table._** 
+5.  ALERT TABLE (TABLE_NAME) ADD (COLUMN_NAME DATA_TYPE);  
+    ALERT TABLE (TABLE_NAME) DROP COLUMN (COLUMN_NAME);  
+    ALERT TABLE (TABLE_NAME) CHANGE (COLUMN_NAME) (NEW_NAME) (DATA_TYPE)(SIZE);  
+    DROP TABLE (TABLE_NAME);  
+    RENAME TABLE (TABLE_NAME) TO (NEW_TABLE_NAME);  
+    **_Alert table add or drop column in a table._**   
+    **_Drop will drop the entire table._**  
 
-6.  CREATE VIEW (VIEW_NAME) AS SELECT (COLUMN_NAME...) FROM (TABLE_NAME) WHERE (CONDITION); 
-    CREATE OR REPLACE VIEW (VIEW_NAME) AS SELECT (COLUMN_NAME...) FROM (TABLE_NAME) WHERE (CONDITION); 
-    DROP VIEW (VIEW_NAME);
-    **_View is a virtual table._** 
+6.  CREATE VIEW (VIEW_NAME) AS SELECT (COLUMN_NAME...) FROM (TABLE_NAME) WHERE (CONDITION);  
+    CREATE OR REPLACE VIEW (VIEW_NAME) AS SELECT (COLUMN_NAME...) FROM (TABLE_NAME) WHERE (CONDITION);  
+    DROP VIEW (VIEW_NAME);  
+    **_View is a virtual table._**  
 
 
 ### :bulb: KEY NOTES
