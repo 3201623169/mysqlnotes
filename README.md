@@ -1,6 +1,6 @@
 # My SQL Notes
 
-It's a note book about mysql.
+It's a note book about sql.
 
 ### :cyclone: Display Data (In order)
 
