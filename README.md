@@ -1,4 +1,4 @@
-# My MySQL Notes
+# My SQL Notes
 
 It's a note book about mysql.
 
